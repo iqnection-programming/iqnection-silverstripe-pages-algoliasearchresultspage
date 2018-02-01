@@ -166,10 +166,12 @@
 					{
 						try {
 							$object_content = implode("\n", $page_html_content);
-							if (strlen($object_content) > 9000)
+							$character_limit = $this->AlgoliaCommunityVersion ? 9000 : 18000;
+							
+							if (strlen($object_content) > $character_limit)
 							{
-								// Max 10kb content size
-								$object_content = substr($object_content, 0, 9000);
+								// Max 10kb content size for Community, 20kb for Paid
+								$object_content = substr($object_content, 0, $character_limit);
 							}
 							
 							$index->saveObject([
