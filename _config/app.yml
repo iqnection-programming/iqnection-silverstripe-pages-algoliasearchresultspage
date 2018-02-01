@@ -1,0 +1,6 @@
+Page:
+  extensions:
+    - Page_Algolia_Search_Extension
+Page_Controller:
+  extensions:
+    - Page_Controller_Algolia_Search_Extension

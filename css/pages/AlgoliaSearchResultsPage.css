@@ -1,0 +1,28 @@
+
+#SearchResults									{ list-style: none; }
+#SearchResults > li								{ padding:25px 0 0 0; margin:25px 0 0 0; border-top:1px solid #666; }
+
+#SearchResults a.searchResultHeader				{ font-weight:bold; display: block; font-size:1.2em; margin-bottom: 10px; }
+#SearchResults > li p							{ margin-bottom:5px; overflow: hidden; max-height: 120px; width: 100%; position: relative; line-height: 18px; }
+#SearchResults > li p::after 					{ content: ""; position: absolute; width:100%; top:70px; left: 0px; height: 50px; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fffaef+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,250,239,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,250,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,250,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#fffaef',GradientType=0 ); /* IE6-9 */
+}
+#SearchResults em 								{ background: #ffe79b; }
+
+#SearchForm_Results								{ margin-bottom:30px; overflow: hidden; }
+#SearchForm_Results:after						{ content:"."; display:block; height:0; clear:both; zoom:1; visibility:hidden; }
+#SearchForm_Results div							{ float:left; margin-right:5px; }
+#SearchForm_Results div.middleColumn			{ width:100%; }
+#SearchForm_Results input[type=text] 			{ height: 30px; line-height: 30px; width: 200px; padding:0px; text-indent: 5px; }
+#SearchForm_Results .Actions input				{ min-height:30px; }
+
+#pagination 									{ padding:25px 0 0 0; margin:25px 0 0 0; border-top:1px solid #666; }
+.pagenum 										{ padding: 0 5px; }
+
+#slider_wrap 									{ display: none !important; }
+
+#algoliaLogo 									{ width: 100%; max-width: 180px; float: right; margin-top: -8px; }
